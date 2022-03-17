@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-FastbotRunner/Pods-FastbotRunner-frameworks.sh
+${PODS_ROOT}/../fastbot/fastbot_native.framework
+${PODS_ROOT}/../fastbot/fastbot_cv.framework
+${PODS_ROOT}/../fastbot/FastbotLib.framework

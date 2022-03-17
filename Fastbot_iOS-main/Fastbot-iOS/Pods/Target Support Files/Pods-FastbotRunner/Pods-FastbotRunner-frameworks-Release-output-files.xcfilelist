@@ -1,0 +1,3 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fastbot_native.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fastbot_cv.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FastbotLib.framework

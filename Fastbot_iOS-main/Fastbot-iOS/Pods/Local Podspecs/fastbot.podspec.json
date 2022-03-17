@@ -1,0 +1,54 @@
+{
+  "name": "fastbot",
+  "version": "0.2.0",
+  "summary": "Fastbot-iOS",
+  "homepage": "https://github.com/bytedance/Fastbot-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "fastbot": "smart-qa@bytedance.com"
+  },
+  "source": {
+    "git": "git@github.com:bytedance/Fastbot_iOS.git",
+    "tag": "0.2.0"
+  },
+  "platforms": {
+    "ios": "9.0",
+    "osx": "10.13"
+  },
+  "xcconfig": {
+    "SYSTEM_FRAMEWORK_SEARCH_PATHS": "\"$(PLATFORM_DIR)/Developer/Library/PrivateFrameworks\" \"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
+    "HEADER_SEARCH_PATHS": "$(SDKROOT)/usr/include/libxml2"
+  },
+  "frameworks": [
+    "XCTest",
+    "XCTAutomationSupport"
+  ],
+  "libraries": [
+    "xml2.2"
+  ],
+  "subspecs": [
+    {
+      "name": "fastbot",
+      "vendored_frameworks": [
+        "fastbot/fastbot_native.framework",
+        "fastbot/fastbot_cv.framework",
+        "fastbot/FastbotLib.framework"
+      ],
+      "source_files": "fastbot/Headers/*.{h}",
+      "xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) FASTBOT_NATIVE=1"
+      }
+    },
+    {
+      "name": "fastbot-stub",
+      "vendored_frameworks": [
+        "XCTest",
+        "XCTAutomationSupport"
+      ],
+      "source_files": "fastbot-stub/*.{h,m,mm}"
+    }
+  ]
+}

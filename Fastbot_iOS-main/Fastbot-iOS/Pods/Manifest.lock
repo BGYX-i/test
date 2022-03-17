@@ -1,0 +1,30 @@
+PODS:
+  - fastbot-stub (0.0.1)
+  - fastbot/fastbot (0.2.0)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+
+DEPENDENCIES:
+  - fastbot-stub (from `./`)
+  - fastbot/fastbot (from `./`)
+  - GCDWebServer (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - GCDWebServer
+
+EXTERNAL SOURCES:
+  fastbot:
+    :path: "./"
+  fastbot-stub:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  fastbot: bf726267c9d92be9368eea98d4e90ee636aba452
+  fastbot-stub: f39f3254b37d72617b01cc9fc430a8df51292704
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+
+PODFILE CHECKSUM: 513bd9a4d3270986b787ee147ebc6b3c3d6aff86
+
+COCOAPODS: 1.11.2
